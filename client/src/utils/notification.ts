@@ -1,6 +1,6 @@
 export function showNotification(
   message: string,
-  type: 'success' | 'error'
+  type: 'success' | 'danger'
 ): void {
   let container = document.getElementById('notification-container')
   if (!container) {

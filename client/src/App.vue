@@ -78,7 +78,7 @@ onMounted(() => {
         applyFilter()
         showNotification('Forecasts refreshed', 'success')
       } catch (err: any) {
-        showNotification(err.message, 'error')
+        showNotification(err.message, 'danger')
       }
     }
   }, REFRESH_INTERVAL_MS)
@@ -101,7 +101,7 @@ async function handleAdd(options: any) {
     showNotification('Forecast added', 'success')
     isModalVisible.value = false
   } catch (err: any) {
-    showNotification(err.message, 'error')
+    showNotification(err.message, 'danger')
   }
 }
 
